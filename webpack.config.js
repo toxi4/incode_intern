@@ -17,14 +17,17 @@ module.exports = {
     new webpack.NoEmitOnErrorsPlugin()
   ],
   module: {
-    loaders: [
+    rules: [
       {
-        loaders: ['babel-loader'],
-        include: [
-          path.resolve(__dirname, "src"),
-        ],
         test: /\.js$/,
-        plugins: ['transform-runtime'],
+        exclude: /(node_modules|bower_components)/,
+        use: {
+          loader: 'babel-loader',
+          options: {
+            presets: ['env'],
+            plugins: ['react-hot-loader/babel']
+          }
+        }
       }
     ]
   }
