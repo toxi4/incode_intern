@@ -2,7 +2,7 @@ import {combineReducers} from 'redux';
 import ClientsReducers from './clients';
 
 const allReducers = combineReducers({
-	clients: ClientsReducers;
+	clients: ClientsReducers
 });
 
 export default allReducers;
