@@ -1,6 +1,10 @@
 import React, {Component} from 'react';
 import {connect} from 'react-redux';
 
+let imgStyle = {
+  float: "left"
+};
+
 class Details extends Component{
 	render(){
 		if (!this.props.client){
@@ -8,9 +12,9 @@ class Details extends Component{
 		}
 		return(
 			<div>
-				<img src={this.props.general.avatar}/>
-				<h2>{this.props.general.firstName} {this.props.general.lastName}</h2>
-				<h3>{this.props.job.title} - {this.props.job.company}</h3>
+				<img style={imgStyle} src={this.props.client.general.avatar}/>
+				<h2>{this.props.client.general.firstName} {this.props.client.general.lastName}</h2>
+				<h3>{this.props.client.job.title} - {this.props.client.job.company}</h3>
 
 			</div>
 		)
