@@ -30,4 +30,8 @@ function mapStateToProps (state){
 	}
 }
 
+function matchDispatchToProps(dispatch){
+	return bindActionCreators()
+}
+
 export default connect(mapStateToProps)(ClientsList);
