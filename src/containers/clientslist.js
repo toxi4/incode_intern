@@ -7,7 +7,7 @@ class ClientsList extends Component{
 	showClients(){
 		return this.props.clients.map((client) => {
 			return(
-				<li key={client.contact.phone}>
+				<li onClick={() => this.props.choose(client)} key={client.contact.phone}>
 					<img src={client.general.avatar}/><br/>
 					<div>{client.general.firstName} {client.general.lastName}</div>
 					<div>{client.job.title}</div>
@@ -31,7 +31,7 @@ function mapStateToProps (state){
 }
 
 function matchDispatchToProps(dispatch){
-	return bindActionCreators()
+	return bindActionCreators({choose: choose},dispatch)
 }
 
-export default connect(mapStateToProps)(ClientsList);
+export default connect(mapStateToProps,matchDispatchToProps)(ClientsList);
