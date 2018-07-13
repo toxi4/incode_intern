@@ -1,9 +1,15 @@
 import React from 'react';
+import ClientsList from '../containers/clientslist.js';
 import '../css/clients.css';
+
 
 const Page =() => (
 	<div>
-		<h2>test</h2>
+		<div id="left">
+			<ClientsList />
+		</div>
+		<div id="right">
+		</div>
 	</div>
 );
 

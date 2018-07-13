@@ -1,0 +1,11 @@
+#left{
+	width: 20%;
+	display: inline-block;
+}
+#right{
+	width: 80%;
+	display: inline-block;
+}
+#left li{
+	list-style: none;
+}
