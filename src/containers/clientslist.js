@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import {bindActionCreators} from 'redux';
 import {connect} from 'react-redux';
+import {choose} from '../actions/index';
 
 class ClientsList extends Component{
 	showClients(){
