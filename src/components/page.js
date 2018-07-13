@@ -1,5 +1,6 @@
 import React from 'react';
 import ClientsList from '../containers/clientslist.js';
+import Details from '../containers/details.js';
 import '../css/clients.css';
 
 
@@ -9,6 +10,7 @@ const Page =() => (
 			<ClientsList />
 		</div>
 		<div id="right">
+			<Details />
 		</div>
 	</div>
 );

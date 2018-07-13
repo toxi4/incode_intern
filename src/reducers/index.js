@@ -1,8 +1,10 @@
 import {combineReducers} from 'redux';
 import ClientsReducers from './clients';
+import CurrentClient from './current';
 
 const allReducers = combineReducers({
-	clients: ClientsReducers
+	clients: ClientsReducers,
+	current: CurrentClient
 });
 
 export default allReducers;
