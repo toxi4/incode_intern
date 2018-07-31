@@ -1,0 +1,22 @@
+body{
+    margin-bottom: 0;
+    margin-top: 0;
+}
+#left{
+	width: 20%;
+	display: inline-block;
+	max-height: 100vh;
+    overflow: scroll;
+}
+#right{
+	width: 80%;
+	display: inline-block;
+	padding-left: 50px;
+    padding-top: 50px;
+}
+#left li{
+	list-style: none;
+}
+#root>div{
+	display: flex;
+}
